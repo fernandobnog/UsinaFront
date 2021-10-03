@@ -1,5 +1,6 @@
 const URL = "http://localhost:8082/usinas";
 
+
 function incluirUsina() {
     let obj = {};
     obj.id = usinaId.value;
