@@ -1,32 +1,39 @@
 const URL = "http://localhost:8082/usinas";
 
 function incluirUsina() {
-    let 
-    obj = {
-        id: usinaId.value,
-        nome: usinaNome.value,
-        capacidade: usinaCapacidade.value,
-        tipo: usinaTipo.value,
-        status: usinaStatus.value
-    };
-    let headers = {
-
+    let obj = {};
+    obj.id = usinaId.value;
+    obj.nome = usinaNome.value;
+    obj.capacidade = usinaCapacidade.value;
+    obj.tipo = usinaTipo.value;
+    
+    if( usinaStatus.value==1){
+    obj.status = true
+    }else{
+        obj.status=false;
     }
+    console.log("antes do envio: "+obj);
+    let headers = {
+        "Content-type": "application/json; charset=UTF-8"
+    };
 
     fetch(URL, {
+        mode: "cors",
         headers: headers,
         method: "POST",
         body: JSON.stringify(obj)
     })
-    .then(r => r.json())
-    .then(resp => {
-        if (resp.status != 'OK') {
-            alert(resp.mensagemErro);
+
+    .then(res => {
+
+        if(res.status == 200 ) {
+            alert("Usina Incluida com sucesso.");
             return;
         } else {
-            alert("Usina incluída");
+            alert(res.mensagemErro);
         }
     })
+
 }
 
 
