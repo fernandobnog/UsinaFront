@@ -13,7 +13,7 @@ function incluirUsina() {
     }else{
         obj.status=false;
     }
-//    console.log("antes do envio: "+obj);
+
     let headers = {
         "Content-type": "application/json; charset=UTF-8"
     };
@@ -53,11 +53,11 @@ function listarUsina(){
                  conteudo +=
 
             `<tr>
-            <td>${usina.id}</td> `+
-            `<td>${usina.nome}</td>`+
-            `<td>${usina.capacidadeEnergetica}</td>`+
-            `<td>${usina.tipo}</td>`+
-            `<td>${usina.status}</td>
+                <td>${usina.id}</td> `+
+                `<td>${usina.nome}</td>`+
+                `<td>${usina.capacidadeEnergetica}</td>`+
+                `<td>${usina.tipo}</td>`+
+                `<td>${usina.status}</td>
             </tr>`;
               });
               let tabela = `<table>
