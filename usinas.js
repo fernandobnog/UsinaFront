@@ -64,7 +64,7 @@ function listarUsina(){
               <tr>
                   <th>USINA ID</th>
                   <th>NOME</th>
-                  <th>CAPACIDADE</th>
+                  <th>CAPACIDADE (MW)</th>
                   <th>TIPO</th>
                   <th>STATUS</th>
               </tr>
