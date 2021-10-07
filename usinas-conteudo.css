@@ -26,8 +26,16 @@
     margin-top: 5px;
   }
 
+  th, td {
+    border-bottom: 1px solid #ddd;
+  }
 
- 
+  td {
+    text-align: center;
+  }
+ table {overflow-x:auto;}
+
+
   @media only screen and (min-width: 768px) {
     /* For desktop: */
     .descricao{text-align: right;}
