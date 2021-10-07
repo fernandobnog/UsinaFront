@@ -1,27 +1,37 @@
-.centralizar{
-    text-align: center;
-}
-
-.centralizar.menu-espaco{
+.titulo{
     margin-top:  60px;
+    text-align: center;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
+  
   }
 
-  .centro {
-    margin-left: 45%;
-  }
+.botao{
+  margin-top: 30px;
+  text-align: center;
+}
+
+.topo{margin-top: 20px;}
+ 
+.campo{text-align: left;}
+
   /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
+    text-align: left;
+    text-align: center;
+    margin-top: 5px;
   }
+
 
  
   @media only screen and (min-width: 768px) {
     /* For desktop: */
+    .descricao{text-align: right;}
+    .campo{text-align: left;}
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
