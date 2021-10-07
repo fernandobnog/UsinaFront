@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Incluir Usina</title>
     <script src="usinas.js"></script>
+    <link rel="stylesheet" href="usinas-conteudo.css">
     <link rel="stylesheet" href="usinas-menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -30,14 +31,57 @@
 
 
     
-    <h1>Incluir Usina</h1>
-    <div> Id: <input id="usinaId" type="number"><br></div>
-    Nome: <input id="usinaNome" type="text"><br>
-    Capacidade: <input id="usinaCapacidade" type="number"><br>
-    Tipo: <input id="usinaTipo" type="text"><br>
-    Status: <input id="usinaStatus" type="number"><br>
-    <button onclick="incluirUsina()" >Incluir Usina</button>
+    <h1 class="centralizar menu-espaco">Incluir Usina</h1>
 
+      <div class="row">
+        <div class="col-2"> 
+          Id: 
+        </div>
+            <div class="col-4">
+              <input id="usinaId" type="number">
+            </div>
+        <div class="col-2">
+          Nome: 
+        </div>
+            <div class="col-4">
+              <input id="usinaNome" type="text">
+            </div>
+        <div class="col-2">
+          Capacidade: 
+        </div>
+            <div class="col-4">
+              <input id="usinaCapacidade" type="number">
+            </div>
+        <div class="col-2">
+          Tipo: 
+        </div>
+            <div class="col-4">
+              <input id="usinaTipo" type="text">
+            </div>
+      </div>
+
+
+
+        <div >
+          <div class="centro">
+            Status: 
+          </div>
+              <div>
+                <input id="usinaStatus" type="number">
+              </div>
+        </div>
+
+
+
+
+    
+    
+    
+    
+    <div>
+      <button class= "centro" onclick="incluirUsina()" >Incluir Usina</button>
+    </div>
+    
     
 </body>
 </html>
