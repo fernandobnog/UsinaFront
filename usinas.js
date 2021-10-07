@@ -60,7 +60,7 @@ function listarUsina(){
                 `<td>${usina.status}</td>
             </tr>`;
               });
-              let tabela = `<table>
+              let tabela = `<table align="center">
               <tr>
                   <th>USINA ID</th>
                   <th>NOME</th>
