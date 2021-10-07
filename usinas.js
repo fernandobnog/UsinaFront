@@ -73,3 +73,7 @@ function listarUsina(){
           tabelaUsinas.innerHTML = tabela;
     })
 }
+
+$("i").click(function () {
+    $("ul").toggleClass("open");
+  });
